@@ -1,0 +1,39 @@
+.clients {
+    padding: 94px 0;
+    &__titel {
+        font-size: 36px;
+        line-height: 1.16;
+        font-weight: 700;
+        color: $textDark;
+        text-align: center;
+    }
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        column-gap: 30px;
+        margin-top: 50px;
+    }
+    &__logo {
+        border: 1px solid $iconTeam;
+        border-radius: 4px;
+        padding: 16px 32px;
+        cursor: pointer;
+        transition-property: border;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover {
+            border: 1px solid $brandBlue;
+        }
+    }
+    &__logo-icon {
+        fill: $iconTeam;
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover {
+            fill: $brandBlue;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+@use './utils/variables.scss' as *;
+@import "./components/site-navigation";
+@import "./components/hero-section";
+@import "./components/usp-block";
+@import "./components/items-grid";
+@import "./components/list-team";
+@import "./components/clients";
+@import "./components/footer";
+@import "./components/modal";
+@import "./components/filters";
+@import "./components/set-card";
+
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: $fontFamily;
+    background-color: $white;
+    color: $textDark;
+}
+.section {
+    padding: 94px 0;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
