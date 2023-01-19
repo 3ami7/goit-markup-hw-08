@@ -2,12 +2,52 @@
     background-color: $darkBg;
     background: linear-gradient($darkBg,
     $darkBg);
-    background-image: url(../images/bg.jpg);
-    width: 1600px;
-    padding: 94px 0;
+    background-image: url(../images/bg@1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 100rem;
+    height: 25rem;
     margin: 0 auto;
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background: linear-gradient($darkBg,$darkBg);
+    background-image: url(../images/bg@1.jpg);
+    }
+
+    @media(min-width: 768px) {
+    background-image: url(../images/bg@2.jpg);
+    }
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background: linear-gradient($darkBg,$darkBg);
+    background-image: url(../images/bg@2.jpg);
+    }
+
+//     @media (min-width: 1200px) {
+//     background-image: url(../images/desktop.jpg);
+//     height: 37.5rem;
+//     }
+//     @media (min-device-pixel-ratio: 2),
+//     (min-resolution: 192dpi),
+//     (min-resolution: 2dppx) {
+//     background: linear-gradient($darkBg,$darkBg);
+//     background-image: url(../images/bg@3.jpg);
+//   }
+
+
+    @media(min-width: 1200px){
+        padding: 94px 0;
+        margin: 0 auto;
+        max-width: 1600px;
+    }
     &__section {
     padding-bottom: 94px;
+    @media(min-width: 768px)and(max-width:1199px) {
+        margin-top: -7px;
+    }
     }
     &__container {
         display: flex;
@@ -18,11 +58,25 @@
     }
     &__container-titel {
         font-weight: 900;
-        font-size: 44px;
-        line-height: 1.36;
+        position: absolute;
+        font-size: 24px;
+        line-height: 1.62;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        transform: translateY(100%);
+        top: 100px;
+        font-weight: 900;
         color: $white;
         text-align: center;
-        margin: 106px 252px 0;
+        @media(min-width: 768px){
+        font-size: 26px;
+        }
+        @media (min-width: 1200px) {
+        font-size: 44px;
+        line-height: 1.36;
+        text-align: center;
+        }
+        
     }
     &__container-btn {
         background-color: $brandBlue;
@@ -35,6 +89,13 @@
         border-radius: 4px;
         width: fit-content;
         padding: 10px 40px;
+        position: absolute;
+        top: 35%;
+        @media(min-width: 1200px) {
+        background-color: $brandBlue;
+        color: $white;
         margin-bottom: 106px;
+        top:40% ;
     }
+}
 }

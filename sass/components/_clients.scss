@@ -12,19 +12,28 @@
         justify-content: center;
         align-items: center;
         list-style: none;
-        column-gap: 30px;
+        flex-wrap: wrap;
+        gap: 30px;
         margin-top: 50px;
+
+        @media(min-width: 1200px){
+            flex-wrap: nowrap;
+            column-gap: 30px;
+        }
     }
     &__logo {
         border: 1px solid $iconTeam;
         border-radius: 4px;
-        padding: 16px 32px;
+        padding: 16px 52px;
         cursor: pointer;
         transition-property: border;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         &:hover {
             border: 1px solid $brandBlue;
+        }
+        @media(min-width: 1200px) {
+            padding: 16px 32px;
         }
     }
     &__logo-icon {

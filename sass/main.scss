@@ -1,5 +1,6 @@
 @use './utils/variables.scss' as *;
 @import "./components/site-navigation";
+@import "./components/mobile-menu";
 @import "./components/hero-section";
 @import "./components/usp-block";
 @import "./components/items-grid";
@@ -31,6 +32,7 @@ body {
     padding: 94px 0;
 }
 .container {
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
 }

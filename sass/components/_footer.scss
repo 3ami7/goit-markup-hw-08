@@ -4,8 +4,16 @@
     &__container{
         padding: 0 15px;
         display: flex;
+        flex-direction: column;
         column-gap: 70px;
         justify-content: space-around;
+        @media(min-width:768px){
+            flex-wrap: wrap;
+            flex-direction: inherit;
+        }
+        @media(min-width: 1200px) {
+            flex-direction: inherit;
+        }
     }
     &__logo {
         font-family: 'Raleway';
@@ -15,12 +23,20 @@
         text-decoration: none;
         display: flex;
         padding-bottom: 20px;
+        justify-content: center;
         &--web {
             color: $brandBlue;
+        }
+        @media(min-width: 1200px) {
+            justify-content: inherit;
         }
     }
     &__address {
         font-style: normal;
+        text-align: center;
+        @media(min-width: 1200px) {
+            text-align: inherit;
+        }
     }
     &__address-list {
         list-style: none;
@@ -51,7 +67,15 @@
         font-size: 14px;
         line-height: 1.14;
         color: $white;
-        margin-top: 10px;
+        margin-top: 60px;
+        text-align: center;
+        @media(min-width: 768px) {
+            margin-top: 0;
+        }
+        @media(min-width: 1200px) {
+            margin-top: 10px;
+            text-align: inherit;
+        }
     }
     &__social-media-list {
         list-style: none;
@@ -60,7 +84,10 @@
         align-items: center;
         column-gap: 10px;
         margin-top: 20px;
-        margin-bottom: 100px;
+        margin-bottom: 60px;
+        @media(min-width: 1200px) {
+            margin-bottom: 100px;
+        }
     }
     &__social-media-contact {
         border-radius: 50%;
@@ -87,11 +114,23 @@
         line-height: 1.14;
         letter-spacing: 0.03em;
         text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        @media(min-width:768px) {
+            margin-top: 60px;
+        }
+        @media(min-width: 1200px) {
+            display: inherit;
+        }
     }
     &__nl-wrapper {
         display: flex;
         padding-top: 20px;
         gap: 12px;
+        flex-direction: column;
+        @media(min-width: 1200px) {
+            flex-direction: inherit;
+        }
     }
     &__nl-input {
         padding-left: 16px;
@@ -101,7 +140,8 @@
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
         border-radius: 4px;
         height: 50px;
-        width: 358px;
+        width: 100%;
+        max-width: 450px;
         background-color: $darkBg;
         font-size: 16px;
         line-height: 1.25;
@@ -112,6 +152,20 @@
             line-height: 1.25;
             letter-spacing: 0.03em;
             color: rgba(255, 255, 255, 0.6);
+        }
+        @media(min-width: 768px) {
+            padding-right: 250px;
+            padding-bottom: 20px;
+        }
+        @media(min-width: 1200px) {
+            width: 358px;
+        }
+    }
+    &__nl-wrap {
+        display: flex;
+        justify-content: center;
+        @media(min-width: 1200px) {
+            display: inherit;
         }
     }
     &__nl-btn {
