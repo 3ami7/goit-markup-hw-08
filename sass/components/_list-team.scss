@@ -15,6 +15,7 @@
     justify-content: center;
     list-style: none;
     flex-wrap: wrap;
+    gap: 30px;
     @media(min-width: 768px)and(max-width: 1200px){
         flex-wrap: wrap;
         gap: 30px;
@@ -31,6 +32,20 @@
     text-align: center;
     padding-bottom: 30px;
     background-color: $white;
+    @media(min-width: 320px)and(max-width: 767px) {
+        width: 90%;
+    }
+    @media(min-width: 768px)and(max-width: 1199px){
+        width: 45%;
+    }
+    }
+    @media(min-width: 320px)and(max-width: 1199px) {
+    &__member-image {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
     }
     &__member-name {
     font-weight: 500;
