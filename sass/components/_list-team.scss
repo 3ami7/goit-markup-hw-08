@@ -38,6 +38,10 @@
     @media(min-width: 768px)and(max-width: 1199px){
         width: 45%;
     }
+    @media(min-width: 1200px) {
+        width: auto;
+        max-width: 270px;
+    }
     }
     @media(min-width: 320px)and(max-width: 1199px) {
     &__member-image {
