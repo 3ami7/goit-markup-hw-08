@@ -79,13 +79,13 @@
         color: inherit;
         padding: 11px 12px 11px 42px;
         outline: none;
-        transition-property: border;
+        transition-property: border, fill;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         &:focus {
             border: 1px solid $brandBlue;
         }
-        &:focus-within .modal__form-input-icon {
+        &:focus-within &__form-input-icon {
             fill: $brandBlue;
         }
     }
