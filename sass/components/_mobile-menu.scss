@@ -47,7 +47,7 @@
       margin-top: 48px;
       display: flex;
       flex-direction: column;
-      margin-bottom: 200px;
+      margin-bottom: 175px;
       list-style: none;
     }
   
@@ -98,6 +98,8 @@
       display: flex;
       list-style: none;
       font-size: 12px;
+      flex-wrap: wrap;
+      row-gap: 10px;
     }
   
     &__social__link {

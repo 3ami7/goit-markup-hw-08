@@ -36,7 +36,8 @@
         width: 90%;
     }
     @media(min-width: 768px)and(max-width: 1199px){
-        width: 45%;
+        width: 100%;
+        max-width: 355px;
     }
     @media(min-width: 1200px) {
         width: auto;
@@ -78,18 +79,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        transition-property: fill, background-color, opacity;
+        fill: $iconTeam;
+        transition-property:fill, background-color, opacity;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         &:hover {
             background-color: $brandBlue;
-        }  
-    }
-    &__member-social-icon {
-        fill: $iconTeam;
-        &:hover {
             fill: $white;
         }
     }
-
 }
