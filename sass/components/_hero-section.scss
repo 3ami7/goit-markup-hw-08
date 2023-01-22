@@ -14,32 +14,13 @@
     (min-resolution: 2dppx) {
     background-image: url(../images/bg@1.jpg);
     }
-
     @media(min-width: 768px) {
     background-image: url(../images/bg@2.jpg);
     }
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../images/bg@2.jpg);
-    }
-
     @media (min-width: 1200px) {
-    background-image: url(../images/desktop.jpg);
+    background-image: url(../images/bg@3.jpg);
     height: 37.5rem;
     }
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../images/bg@3.jpg);
-  }
-
-
-    // @media(min-width: 1200px){
-    //     padding: 94px 0;
-    //     margin: 0 auto;
-    //     max-width: 1600px;
-    // }
     &__section {
     padding-bottom: 94px;
     @media(min-width: 768px)and(max-width:1199px) {
@@ -97,7 +78,7 @@
         @media(min-width: 1200px) {
         background-color: $brandBlue;
         color: $white;
-        margin-top: 180px;
+        margin-top: 300px;
 
     }
 }

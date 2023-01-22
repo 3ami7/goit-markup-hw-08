@@ -92,6 +92,9 @@
         height: 4px;
         border-radius: 2px;
         background-color: $brandBlue;
+        @media(min-width: 911px)and(max-width: 1199px) {
+          bottom: -27px;
+        }
       }
     }
     &__contact-links {
