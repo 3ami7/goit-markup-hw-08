@@ -82,12 +82,11 @@
         transition-property: border, fill;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:focus {
+            border-color: $brandBlue;
+            fill: $brandBlue;
+        }
     }
-    &__form-input:focus {
-        border-color: $brandBlue;
-        fill: $brandBlue;
-    }
-
     &__form-input-icon {
         position: absolute;
         top:50%;
@@ -97,7 +96,7 @@
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
-    &__form-input-icon:focus {
+    &__form-wrapper:focus-within &__form-input-icon {
         fill: $brandBlue;
     }
 
